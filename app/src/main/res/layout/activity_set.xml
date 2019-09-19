@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="36dp"
+            android:layout_centerVertical="true"
+            android:layout_height="36dp"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_back_white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:layout_centerInParent="true"
+            android:text="配置帐号"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:text="设备ID："
+            android:gravity="right"
+            android:paddingTop="10dp"
+            android:paddingRight="4dp"
+            android:textColor="@color/color_77"
+            android:textSize="16dp" />
+        <EditText
+            android:id="@+id/et_uid"
+            android:padding="8dp"
+            android:textColor="@color/color_66"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/edittext_border"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:text="KEY："
+            android:gravity="right"
+            android:paddingTop="10dp"
+            android:paddingRight="4dp"
+            android:textColor="@color/color_77"
+            android:textSize="16dp" />
+        <EditText
+            android:id="@+id/et_key"
+            android:padding="8dp"
+            android:textColor="@color/color_66"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/edittext_border"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="连接"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/btn_border"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text='说明：\n1.首页状态有"网关在线","网关离线","手机未连接服务器"三个状态,手机未连接服务器可能是网络问题,也可能是帐号填写错误。\n2.点击"开灯","关灯"按钮可以切换灯的状态,如果zigbee终端响应,手机的最近操作会变成已响应,灯的状态也会变。\n3.更多问题可咨询淘宝客服(橙丁科技):\n    http://cd6969.taobao.com'
+        android:textColor="@color/color_77"
+        android:textSize="15dp"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

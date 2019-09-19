@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray_bg">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_weight="1"
+                android:text="状态：(无)"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginRight="9dp"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:id="@+id/setUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="更多"
+                    android:textColor="@color/white"
+                    android:background="@drawable/white_cornor_stroke_drawable"
+                    android:textSize="13dp" />
+            </LinearLayout>
+       </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:paddingLeft="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#fbfbfb">
+        <TextView
+            android:id="@+id/tv_actionbar_titleb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最近操作："
+            android:textColor="@color/color_88"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/tv_ctrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开灯1"
+            android:textColor="@color/color_88"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="("
+            android:textColor="@color/color_88"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/tv_ctrl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已响应"
+            android:textColor="@color/color_88"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=")"
+            android:textColor="@color/color_88"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/color_gray_bg"
+        android:background="@color/color_gray_bg"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:dividerHeight="0dp">
+    </ListView>
+</LinearLayout>
